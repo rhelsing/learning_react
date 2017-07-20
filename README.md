@@ -24,5 +24,8 @@ Things you may want to cover:
 * ...
 
 Useful
+use foreman start
 
+#supposed to use dev version but asset error happens
 bin/webpack --watch --progress --colors
+
