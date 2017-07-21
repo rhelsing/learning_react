@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
+import Hello from 'components/hello'
 
 class CardExampleCard extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class CardExampleCard extends React.Component {
         </span>
       </Card.Meta>
       <Card.Description>
-        Matthew is a musician living in Nashville.
+        Matthew is a musician living in Nashville. <Hello name={this.props.year}></Hello>
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -24,6 +25,7 @@ class CardExampleCard extends React.Component {
         22 Friends
       </a>
     </Card.Content>
+    <div><a href="/pages/index">Back</a></div>
   </Card>
   }
 }
